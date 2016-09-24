@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1024">
 	<title>Gallery</title>
-	<link rel="stylesheet" href="style.css">
+	<meta name="description" content="Простой и несложный слайдер для вашего сайт.">
+	<meta name="keywords" content="слайдер, галерея, фото галерея, слайдер на сайт, галерея на сайт, фото галерея на сайт, собственный слайдер">
+	<link rel="stylesheet" href="style.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome-4.6.1/css/font-awesome.min.css">
 </head>
 <body>
 	<header class="header-section">
-		<h3>Слайдер для вашего сайта.</h3>
-		<p>Если вам нужен простой и несложный слайдер на сайт, то вы можете воспользоваться этим. Несколько слов о его преимуществах:</p>
-		<p><span class="number">1.</span> Вы можете добавлять сколько угодно фотографий на страницу, слайдер все равно будет работать правильно.</p>
-		<p><span class="number">2.</span> Блок с фотографией всегда выравнивается по центру, в не зависимости от высоты самой фотографии.</p>
-		<p><span class="number">3.</span> Каждая фотография пронумеровывается и этот номер отображается в верхнем левом углу. Также помимо блока с основной фотогафией, есть небольшой контейнер с такими же маленькими, который помогает сориентироваться пользователю какая именно фотография идет до или после основной.</p>
-		<p>В общем, я надеюсь, этот слайдер вам приглянется. Скачать вы его можете внизу страницы.</p>
+		<h3 class="head-title">Слайдер для вашего сайта.</h3>
+		<p>Если вы зашли на этот сайт, то значит вам нужен хороший слайдер. В интернете вы можете найти много интересных галерей, которые напичканы различными крутыми эффектами и т.д. Но что, если вам нужен простой и несложный слайдер, который при этом выглядит красиво и в нем было пару интересных фишек. Если вы искали именного это, тогда этот слайдер отлично подойдет для вашего сайта. Несколько слов о его характеристиках:</p>
+		<div class="text-wrapper">
+		<p><span class="number">1</span> Вы можете добавлять сколько угодно фотографий на страницу, слайдер все равно будет работать правильно. Код подхватит новые фотографии и покажет их при открытии галереи, при этом нумерация фотографий будет правильной.</p>
+		<p><span class="number">2</span> Блок с фотографией всегда выравнивается по центру, в не зависимости от высоты самой фотографии. Это бывает очень удобно, так как не все фотографии бывают одной высоты.</p>
+		<p><span class="number">3</span> Каждая фотография пронумеровывается и этот номер отображается в верхнем левом углу. Также помимо блока с основной фотогафией, есть небольшой контейнер с такими же маленькими, который помогает сориентироваться пользователю какая именно фотография идет до или после основной.</p>
+		<p><span class="number">4</span> Управление переключениями фотографий, а также их закрытие, с помощью кнопок. Если вам надоела мышь, то вы можете переключать фотографии нажимая на кнопки влево &larr; или вправо &rarr;, а закрыть слайдер с помощью кнопки <strong>esc</strong>.</p>
+		<p>В общем, я надеюсь, этот слайдер вам приглянется и вы будете его использовать в своих работах. Он абсолютно бесплатный. Скачать архив вы можете внизу страницы, а пока можете опробовать его непосредственно в действии. По мере изменения и улучшения кода, архив будет изменяться.</p>
+		</div>
 	</header>
 	<div class="wrapper">
+		<h3>Пример:</h3>
+		<div class="style-select">
+			<div class="radio">
+				<input type="radio" name="gallery-style" value="all" id="radio-all-controls" checked="">
+				<label for="radio-all-controls">Полная версия<br>
+				</label>
+			</div>
+			<div class="radio">
+				<input type="radio" name="gallery-style" value="minimal" id="radio-minimal-black">
+				<label for="radio-minimal-black">Без нижнего контейнера<br>
+				</label>
+			</div>
+		</div>
 		<img src="images/image-1.jpg" alt="" width="300px" height="200px">
 		<img src="images/image-2.jpg" alt="" width="300px" height="200px">
-		<img src="images/image-3.jpg" alt="" width="300px" height="200px">
 		<img src="images/image-4.jpg" alt="" width="300px" height="200px">
-		<img src="images/image-5.jpg" alt="" width="300px" height="200px">
-		<img src="images/image-6.jpg" alt="" width="300px" height="200px">
-		<img src="images/image-7.png" alt="" width="300px" height="200px">
-		<img src="images/image-8.jpg" alt="" width="300px" height="200px">
 		<img src="images/image-9.jpg" alt="" width="300px" height="200px">
 		<img src="images/office-923169_1920.jpg" alt="" width="300px" height="200px">
 		<img src="images/programming-583923.jpg" alt="" width="300px" height="200px">
-		<img src="images/coffee-1284041_1920.jpg" alt="" width="300px" height="200px">
 	</div>
 	<div class="show-image invisible">
 		<span class="img-close"></span>
@@ -51,6 +65,14 @@
 	</div>
 	<footer class="footer-section">
 		<p class="download-gallery">Архив файлов с галереей cкачать здесь <a href="gallery.rar" class="gallery">галерея</a></p>
+		<h3 class="head-title">Контакты.</h3>
+		<p>Если у вас возникли вопросы или какие-либо предложения по улучшению кода, вы можете связаться со мной по этим контактам.</p><div class="solial-links">
+			<ul class="social-ul">
+				<li class="item-social"><a href="https://vk.com/id20676440" target="_blank" class="item-social-link vk">vk</a></li>
+				<li class="item-social"><a href="https://www.facebook.com/vladimir.ivanov.50115" target="_blank" class="item-social-link facebook">f</a></li>
+				<li class="item-social"><a href="https://github.com/iv-developer" target="_blank" class="item-social-link github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
 	</footer>
 	<script src="common.min.js"></script>
 </body>
