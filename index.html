@@ -7,6 +7,7 @@
 	<meta name="description" content="Простой и несложный слайдер для вашего сайт.">
 	<meta name="keywords" content="слайдер, галерея, фото галерея, слайдер на сайт, галерея на сайт, фото галерея на сайт, собственный слайдер">
 	<style>body,html{margin:0;padding:0;font-family:"Cormorant Infant",serif;font-size:16px;color:#fff}.header-section{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}.header-page{position:relative;height:100%;width:100%;background:url(img/landscape.jpg) 0 50% no-repeat;background-size:cover}.header-page::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;background-color:rgba(66,47,47,.2)}.frame{position:relative;width:100%;height:100%;background:url(img/frame.png) 50% 50% no-repeat;background-size:84%;z-index:1;-webkit-transition:all 2s linear;transition:all 2s linear}.header-text{position:absolute;top:50%;left:50%;margin-left:-353.5px;margin-top:-129.5px;z-index:1}.camera{display:inline-block;margin:0 360px 15px 305px}.header-title{display:inline-block;position:relative;margin:0 290px 0 240px}.header-title::before{content:"";position:absolute;top:25px;left:-65px;width:55px;height:3px;background-color:#DDD7CD}.header-title::after{content:"";position:absolute;top:25px;left:190px;width:55px;height:3px;background-color:#DDD7CD}.header-title h4{font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#DDD7CD}.menu{position:relative;margin:10px 365px 15px 300px;cursor:pointer;-webkit-transition:all .3s linear;transition:all .3s linear}.line-menu{background-color:#DDD7CD;-webkit-transition:all .3s linear;transition:all .3s linear;width:45px;height:7px}.line-menu:not(:last-child){margin-bottom:7px}.first-line{width:20px;height:30px}.second-line{width:30px;height:20px;margin-left:25px;margin-top:-28px}.third-line{width:100%;height:15px}.menu-control{display:none;position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(30,30,30,.95);z-index:1;text-align:center;opacity:0}.container-menu{position:absolute;top:50%;left:50%;margin-top:-55px;margin-left:-73px}ul{list-style-type:none;margin:0;padding:0}.item-control{-webkit-transition:all .3s linear;transition:all .3s linear}.item-control a{font-weight:700;color:#8D6D3D;text-decoration:none;text-transform:uppercase;letter-spacing:2px}.item-control:not(:last-child){margin-bottom:25px}.close-gallery{position:absolute;top:50px;right:50px;height:0;padding:20px 0;cursor:pointer}.line-left{width:35px;height:1px;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);background-color:#fff;opacity:.8;-webkit-transition:opacity .2s linear;transition:opacity .2s linear}.line-right{position:absolute;top:20px;width:35px;height:1px;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);background-color:#fff;opacity:.8;-webkit-transition:opacity .2s linear;transition:opacity .2s linear}.item-one{position:absolute;top:25px;left:10px;width:0;height:3px;background-color:#8D6D3D;-webkit-transition:all .3s linear;transition:all .3s linear}.item-two{position:absolute;top:72px;left:3px;width:0;height:3px;background-color:#8D6D3D;-webkit-transition:all .3s linear;transition:all .3s linear}.item-three{position:absolute;top:113px;left:0;width:0;height:3px;background-color:#8D6D3D;-webkit-transition:all .3s linear;transition:all .3s linear}</style>
+	<link rel="stylesheet" href="style.min.css">
 </head>
 <body>
 	<header class="header-section" name="main">
@@ -189,12 +190,62 @@
 			</div>
 		</div>
 	</footer>
+	<div class="preloader">
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+		<div class='tile'></div>
+	</div>
 	<script>
 		function loadCSS(hf) {
 			var ms=document.createElement("link");ms.rel="stylesheet";
 			ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
 		}
-		loadCSS("style.min.css");
 		loadCSS("font-awesome-4.6.1/css/font-awesome.min.css");
 		loadCSS("https://fonts.googleapis.com/css?family=Cormorant+Infant&subset=cyrillic");
 		loadCSS("https://fonts.googleapis.com/css?family=Merriweather");
